@@ -39,6 +39,22 @@ a {
     opacity: 0.9;
     cursor: pointer;
 }
+.section-heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
+.section-desc {
+    color: #575f66;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
+    margin-top: 18px;
+}
 /* Header */
 .header {
     /* min-height: 100vh; */
@@ -197,4 +213,81 @@ a {
 .hero__img:first-child {
     margin-right: -6px;
     position: relative;
+}
+/* service */
+.service {
+    padding: 170px 0;
+}
+.service__heading,
+.service__desc {
+    text-align: center;
+}
+.service__desc {
+    width: 468px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.service__row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.service__list {
+    margin-bottom: 75px;
+}
+.service-item {
+    width: 470px;
+    display: flex;
+    border-radius: 10px;
+    background: #fff;
+    padding: 22px;
+    transition: 0.25s;
+}
+.service-item:hover {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+.service-item:hover .service-item__icon {
+    background: #2e80ce;
+    color: #fff;
+}
+.service-item__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eff6fd;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+    color: #10375c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: 0.25s;
+}
+.service-item__body {
+    margin-left: 20px;
+}
+.service-item__heading {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.27;
+}
+.service-item_desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
 }
