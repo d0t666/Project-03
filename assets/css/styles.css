@@ -94,7 +94,7 @@ button {
 /* Header */
 .header {
     /* min-height: 100vh; */
-    min-height: 80vh;
+    min-height: 62vh;
     background: var(--header-bg);
     padding-top: 30px;
 }
@@ -146,8 +146,14 @@ button {
 /* Header top */
 .header-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #1a365b;
+    padding: 20px 0;
+    column-gap: 198px;
 }
 .navbar__list {
     display: flex;
