@@ -1,0 +1,71 @@
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (max-width: 1399.98px) {
+    /* CSS rules for extra extra large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1199.98px) {
+    /* CSS rules for extra large devices */
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) {
+    /* CSS rules for large devices */
+    .install__heading {
+        font-size: 2.6rem;
+    }
+    .footer__row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .work__list {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .hero__heading {
+        font-size: 5.2rem;
+    }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (max-width: 767.98px) {
+    .install__row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer__row {
+        grid-template-columns: 1fr;
+    }
+
+    /* feature */
+    .feature__content {
+        margin-top: 30px;
+    }
+
+    /* install */
+    .install__inner {
+        padding: 70px;
+    }
+    /* Blog */
+    .news__list {
+        margin-top: 30px;
+    }
+    .member {
+        padding: 0;
+    }
+    .header {
+        background: url(../img/hero_img1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .hero__content {
+        background: #21355ad4;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    /* CSS rules for medium devices */
+}
+
+/* Small devices (phones, 0px and up) */
+@media (max-width: 575.98px) {
+    /* CSS rules for small devices */
+}

@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 :root {
@@ -12,11 +14,11 @@ body {
     font-family: "Sora", sans-serif;
 }
 /* Commont */
-.container {
+/* .container {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
-}
+} */
 a {
     text-decoration: none;
 }
@@ -97,6 +99,12 @@ button {
     min-height: 62vh;
     background: var(--header-bg);
     padding-top: 30px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .logo {
     font-size: 1rem;
@@ -187,6 +195,7 @@ button {
 .header-action__signup {
     --height: 44px;
     min-width: 104px;
+    flex-shrink: 0;
 }
 .header-action__login {
     margin-right: 7px;
@@ -198,13 +207,14 @@ button {
 }
 /* Hero */
 .hero {
-    display: flex;
+    /* display: flex; */
     margin-top: 76px;
     align-items: center;
+    padding-bottom: 110px;
 }
 .hero__content {
     flex-shrink: 0;
-    width: 44%;
+    /* width: 44%; */
 }
 .hero__media {
     flex-grow: 1;
@@ -218,6 +228,7 @@ button {
     letter-spacing: -1.4px;
 }
 .hero__desc {
+    margin-top: 30px;
     color: #c9d2da;
     font-size: 1.8rem;
     font-style: normal;
@@ -266,19 +277,23 @@ button {
     text-align: center;
 }
 .service__desc {
-    width: 468px;
+    width: min(468px, 100%);
     margin-right: auto;
     margin-left: auto;
 }
 .service__row {
     margin-top: 70px;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+}
+.service__images {
+    width: min(570px, 100%);
+    height: 570px;
 }
 .service__img {
-    width: 570px;
-    height: 570px;
+    width: 100%;
+    height: 100%;
     border-radius: 12px;
     object-fit: cover;
 }
@@ -286,7 +301,7 @@ button {
     margin-bottom: 75px;
 }
 .service-item {
-    width: 470px;
+    width: min(470px, 100%);
     display: flex;
     border-radius: 10px;
     background: #fff;
@@ -351,7 +366,7 @@ button {
     transition: 0.3s;
 }
 .work__desc {
-    width: 468px;
+    width: min(468px, 100%);
 }
 .work__list {
     margin-top: 70px;
@@ -390,7 +405,7 @@ button {
     padding: 85px;
 }
 .feature__media {
-    width: 48%;
+    width: 100%;
 }
 .feature__images {
     position: relative;
@@ -398,23 +413,23 @@ button {
     padding-right: 58px;
 }
 .feature__img {
-    width: 512px;
+    width: 100%;
     height: 370px;
     object-fit: cover;
     border-radius: 6px;
 }
 .feature__img:last-child {
-    width: 332px;
+    width: 64%;
     height: 370px;
     position: absolute;
     bottom: 0;
     right: 0;
 }
 .feature__inner {
-    display: flex;
+    /* display: flex;
     column-gap: 130px;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 .feature__cta {
@@ -422,7 +437,7 @@ button {
 }
 /* Member */
 .member {
-    padding: 85px;
+    padding: 0 85px;
     text-align: center;
 }
 .member__header {
@@ -442,6 +457,12 @@ button {
 .member__control {
     margin-top: 38px;
     justify-content: center;
+}
+.member-item {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 .member-item:hover .member-item__thumb {
     transform: scale(1.1111);
@@ -483,14 +504,12 @@ button {
     border-radius: 4px;
     background: #2e80ce;
     padding: 0 70px;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .install__img {
-    width: 284px;
+    width: min(284px, 100%);
     height: 522px;
-    object-fit: cover;
+    object-fit: contain;
     margin-top: -95px;
     display: block;
 }
@@ -503,6 +522,7 @@ button {
 }
 .install__heading {
     max-width: 489px;
+    width: 100%;
 }
 .install__row {
     margin-top: 38px;
@@ -518,7 +538,7 @@ button {
     padding-top: 85px 0;
 }
 .news__inner {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
 }
@@ -544,7 +564,7 @@ button {
 }
 .news__list {
     display: flex;
-    max-width: 570px;
+    width: min(570px, 100%);
     column-gap: 30px;
 }
 .news-item {
